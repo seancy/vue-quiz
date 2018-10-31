@@ -2,7 +2,6 @@
 php/vendor
 .env
 .DS_Store
-*.js
 *.map
 node_modules
 source/scss/grid/
