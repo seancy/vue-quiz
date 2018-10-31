@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "postcss-flexbugs-fixes": true,
+    "autoprefixer": {
+      "grid": true,
+      "flexbox": "no-2009"
+    }
+  }
+}

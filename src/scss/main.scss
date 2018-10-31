@@ -1,0 +1,571 @@
+@import "fonts";
+@import "variables";
+@import "beauty";
+@import "traffic-violation";
+@import "car-info";
+@import "wide";
+@import "wide-historical";
+@import "insurance";
+@import "traffic-violation-wide-car-info";
+
+
+em {
+    font-style: unset;
+}
+
+h1, h2, h3, h4, h5, body, ul, dl,dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul, dl, dd {
+    list-style: none;
+}
+
+input, img {
+    outline: none;
+}
+
+.swiper-slide {
+    border: 0 solid #fff !important;
+
+    img {
+        border: 3px solid #fff;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    //background-image:url(./src/img/girls/6.jpg)
+}
+
+.line {
+    &:after {
+        display: block;
+        content: '';
+        height: 1px;
+        background-color: #e0e0e0;
+    }
+}
+
+.navigation {
+    /* Style for "矩形 4 拷贝" */
+    /*width: 720px;*/
+    height: 48px;
+    background-color: #212121;
+    display: flex;
+
+    .button-return {
+        width: 48px;
+        height: 100%;
+
+        .icon {
+            /* Style for "返回" */
+            width: 12px;
+            height: 23px;
+            margin: 12.5px 0 0 16px;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        /* Style for "平安车险" */
+        color: #ffffff;
+        align-self: center;
+        padding-right: 12px;
+        font-family: "FZLTHK -- GBK 1-0";
+        font-size: 16px;
+        font-weight: 400;
+        flex: 1;
+        text-align: center;
+    }
+
+}
+
+.title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
+    padding-top: 20px;
+    padding-right: $padding-left-right;
+    //overflow: hidden;
+    /* Style for "美女视频播报" */
+    color: #000000;
+    font-family: "FZLTZHK -- GBK 1-0";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31.3px;
+    padding-left: 14px;
+
+    &:before {
+        display: block;
+        content: '';
+        margin-right: 14px;
+        margin-bottom:2px;
+        /*position: absolute;
+        left: 0;*/
+        /* Style for "矩形 56" */
+        width: 2px;
+        height: 16px;
+        background-color: #ed602b;
+    }
+
+    span {
+        flex: 1;
+    }
+
+    img {
+        //position: absolute;
+        //right: 0;
+        /* Style for "椭圆 28" */
+        width: 14px;
+        height: 14px;
+    }
+
+    em {
+        flex: 1;
+        text-align: right;
+        color: #ff7034;
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
+
+.car-info {
+    padding: 16px $padding-left-right 0 $padding-left-right;
+
+    padding: 0 16px 10px 16px;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        label {
+            width: 56px;
+            color: #000000;
+            font-family: "FZLTXIHK -- GBK 1-0";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 31.3px;
+        }
+        input[type=text] {
+            border: none;
+            margin-left: 12px;
+            height: 40px;
+            padding-left: 10px;
+
+            /* Style for "粤A 68688" */
+            opacity: 0.54;
+            color: #000000;
+            font-family: "FZLTXIHK -- GBK 1-0";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 31.3px;
+            text-transform: uppercase;
+
+            &::placeholder {
+                /*font-size: 14px;
+                line-height: 31.3px;*/
+
+            }
+        }
+        .icon-wrapper {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+
+            img {
+                width: 18px;
+                height: 16px;
+            }
+        }
+
+    }
+
+}
+
+.tabs-nav {
+    display: flex;
+    padding: 20px $padding-left-right 0 $padding-left-right;
+
+    li {
+        flex: 0.5;
+        cursor: pointer;
+        /* Style for "美女视频报价" */
+        //width: 84px;
+        //height: 14px;
+        color: #000000;
+        font-family: "FZLTZHK -- GBK 1-0";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 31.3px;
+        text-align: center;
+
+        &:after {
+            display: block;
+            content: '';
+            /* Style for "矩形 56 拷贝 2" */
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid #fff;
+            background-color: #e0e0e0;
+        }
+        &.active {
+            color: #ed602b;
+
+            &:after {
+                background-color: #ed602b;
+                border-top: 1px solid #ed602b;
+            }
+        }
+    }
+
+}
+
+.banner {
+    /* Style for "圆角矩形 46" */
+    /*width: 656px;*/
+    max-width: 100%;
+    //max-height: 72px;
+    border-radius: 4px;
+    padding: 10px $padding-left-right 0 $padding-left-right;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.list {
+    padding: 10px 0 0 0;
+
+    li {
+        display: flex;
+        //padding-bottom: 10px;
+        position: relative;
+        padding: 0 $padding-left-right 10px 0;
+
+        &:not(:first-child) {
+            padding-top: 13px;
+        }
+
+        .icon-wrap {
+            padding-top: 15px;
+            padding-left: $padding-left-right;
+
+            &.disabled {
+                &:before {
+                    background-image: url('../img/cycle-ok-disabled.png');
+                    background-size: cover;
+                }
+            }
+            &:before {
+                display: block;
+                content: '';
+                /* Style for "CIRCLE / O" */
+                width: 18px;
+                height: 18px;
+                //background-color: #20c19c;
+                background-image: url('../img/cycle-ok.png');
+                background-size: cover;
+            }
+        }
+
+        .item {
+            flex: 1;
+            //margin: 0 20px;
+            //margin-right: $padding-left-right;
+            padding-left: $padding-left-right;
+
+            &:after {
+                position: absolute;
+                bottom: 1px;
+                display: block;
+                content: '';
+                /* Style for "形状 1" */
+                height: 1px;
+                //width: 100%;
+                left: $padding-left-right + 35px;
+                right: 0;
+
+                background-color: #e0e0e0;
+
+            }
+
+            h4 {
+                /* Style for "广州信诚北街路段" */
+                opacity: 0.87;
+                color: #000000;
+                font-family: "FZLTHK -- GBK 1-0";
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .sub-title {
+                /* Style for "2018-07-04" */
+                opacity: 0.54;
+                color: #000000;
+                font-family: "Hiragino Sans GB - W 3";
+                font-size: 10px;
+                font-weight: 400;
+            }
+
+            .flags {
+                display: flex;
+                padding-bottom: 13px;
+
+                li {
+                    margin-right: 3px;
+                    padding: 0 5px;
+                    line-height: 13px;
+                    height: 12px;
+
+                    /* Style for "圆角矩形 58 拷贝" */
+                    border-radius: 6px;
+                    background-color: #ed602b;
+
+                    /* Style for "扣1分     罚5" */
+                    color: #ffffff;
+                    font-family: "FZLTHK -- GBK 1-0";
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+            }
+
+            .remark {
+                /* Style for "机动车违反规定停放、" */
+                height: 24px;
+                opacity: 0.87;
+                color: #000000;
+                font-family: "FZLTHK -- GBK 1-0";
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 14px;
+            }
+        }
+
+        .operation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            .status {
+                &.disabled {
+                    color: #000000;
+                    opacity: 0.54;
+                }
+                /* Style for "不可办理" */
+                color: #20c19c;
+                font-family: "Hiragino Sans GB - W 3";
+                font-size: 10px;
+                font-weight: 400;
+            }
+            .statusIcon {
+                &:before {
+                    display: block;
+                    content: '';
+                    background-image: url("../img/sun-mountain.png");
+                    margin-bottom: 5px;
+                    /* Style for "椭圆 30" */
+                    width: 18px;
+                    height: 18px;
+                    //background-color: #c0deff;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+}
+
+.special-explanation {
+    margin: 10px $padding-left-right 0 $padding-left-right;
+    //border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+
+    h4 {
+        /* Style for "特别说明 1. 可在" */
+        color: #000000;
+        font-family: "FZLTHK -- GBK 1-0";
+        font-weight: 400;
+        line-height: 24px;
+        /* Text style for "特别说明" */
+        font-size: 12px;
+    }
+    li {
+        font-size: 10px;
+        line-height: 20px;
+
+        &.highlight {
+            color: #ed602b;
+
+        }
+    }
+
+}
+
+.notice {
+    margin: 0 $padding-left-right 12px $padding-left-right;
+
+    /* Style for "温馨提示：补充车辆信" */
+    opacity: 0.87;
+    color: #000000;
+    font-family: "FZLTHK -- GBK 1-0";
+    font-size: 10px;
+    font-weight: 400;
+    /* Text style for "不可更改" */
+    em {
+        color: #ed602b;
+        font-style: unset;
+
+    }
+}
+
+.button-area-wrap {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    /*position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    button {
+        @extend %green-button;
+        width: 296px;
+        height: 32px;
+    }
+}
+
+.dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //justify-content: center;
+
+    &.close {
+        display: none;
+    }
+
+    &:after {
+        content: '';
+        z-index: 1;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.6;
+    }
+    .dialog-body {
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 16px;
+        box-sizing: border-box;
+        background-image: url("../img/dialog-background@2x.png");
+        background-size: cover;
+
+        /* Style for "圆角矩形 55" */
+        width: 265px;
+        height: 230px;
+        border-radius: 6px;
+        background-color: #e4f3fe;
+
+        span {
+            padding-bottom: 12px;
+
+            /* Style for "还没有输入发动机号哦" */
+            height: 14px;
+            color: #333333;
+            font-family: "FZLTHK -- GBK 1-0";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 23.1px;
+            /* Text style for "还没有输入发动机号哦" */
+            letter-spacing: 1.09px;
+        }
+        button {
+            @extend %green-button;
+
+            /* Style for "圆角矩形 56" */
+            width: 110px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: #20c19c;
+        }
+    }
+    img {
+        z-index: 2;
+        margin-top: 50px;
+
+        /* Style for "关闭" */
+        width: 13px;
+        height: 13px;
+        //background-color: #ffffff;
+    }
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 61px;
+
+    img {
+        padding-bottom: 12px;
+        width: 178px;
+        height: 159px;
+    }
+    span {
+        padding-bottom: 10px;
+        /* Style for "非常棒！12 天没有" */
+        /*width: 151px;
+        height: 14px;*/
+        opacity: 0.87;
+        color: #000000;
+        font-family: "FZLTXIHK -- GBK 1-0";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 31.3px;
+
+        em {
+            /* Text style for "12" */
+            color: #ed602b;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: unset;
+        }
+
+    }
+    button {
+        @extend %green-button;
+        width: 110px;
+        height: 32px;
+        /* Style for "立刻炫耀" */
+        color: #ffffff;
+        font-family: "FZLTXIHK -- GBK 1-0";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 31.3px;
+    }
+}
